@@ -23,7 +23,7 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
 
    
 RUN echo 'php' 
-RUN aptitude install --no-install-recommends --no-install-suggests -y\
+RUN aptitude install -y\
 	php7.0-fpm
 RUN echo 'USER' 
 RUN adduser luc && adduser luc sudo	
