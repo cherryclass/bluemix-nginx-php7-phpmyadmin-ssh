@@ -20,7 +20,6 @@ RUN aptitude install -y\
 	sudo \
     nano \
     ssh \
-    supervisor \
     nginx \
 php7.0-fpm
 	
@@ -28,6 +27,9 @@ php7.0-fpm
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 	&& ln -sf /dev/stderr /var/log/nginx/error.log
+
+
+
 
 # configure NGINX as non-daemon
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
