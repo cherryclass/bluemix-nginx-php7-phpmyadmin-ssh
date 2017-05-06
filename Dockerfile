@@ -11,7 +11,9 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
     aptitude \
     apt-utils
     
-RUN apt-get install --no-install-recommends --no-install-suggests -y \
+RUN  echo "deb http://nginx.org/packages/mainline/debian/ stretch nginx" >> /etc/apt/sources.list \
+ 	&& apt-get update \
+ 	&& apt-get install --no-install-recommends --no-install-suggests -y \
 						nginx=${NGINX_VERSION} \
 						nginx-module-xslt=${NGINX_VERSION} \
 						nginx-module-geoip=${NGINX_VERSION} \
