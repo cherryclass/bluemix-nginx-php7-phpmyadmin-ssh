@@ -22,8 +22,8 @@ RUN aptitude install -y\
     nano \
     ssh \
     supervisor \
-    nginx
-	php7.0-fpm
+    nginx \
+php7.0-fpm
 	
 
 # forward request and error logs to docker log collector
