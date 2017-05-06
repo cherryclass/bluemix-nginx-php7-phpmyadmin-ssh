@@ -6,8 +6,11 @@ ENV NGINX_VERSION 1.13.0-1~stretch
 ENV NJS_VERSION   1.13.0.0.1.10-1~stretch
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove)
 
+RUN echo 'starting' 
+RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-utils && apt-get -y -q autoclean && apt-get -y -q autoremove)
+
+RUN echo 'package' 
 RUN apt-get install --no-install-recommends --no-install-suggests -y \
     aptitude \
     sudo \
@@ -16,12 +19,13 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
     supervisor \
     nginx
 
-RUN adduser luc && adduser luc sudo
-   
 
-RUN aptitude install \
+   
+RUN echo 'php' 
+RUN aptitude install --no-install-recommends --no-install-suggests -y\
 	php7.0-fpm
-	
+RUN echo 'USER' 
+RUN adduser luc && adduser luc sudo	
 
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
