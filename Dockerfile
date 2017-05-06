@@ -15,15 +15,13 @@ RUN aptitude install -y\
     	ssh \
     	php7.0-fpm
 
-# php7.0-fpm will not start if this directory does not exist
-#RUN mkdir /run/php
-
-#RUN useradd -ms /bin/bash myuser
-#RUN mkdir /home/myuser/www
-#ADD index.php /home/myuser/www/index.php
+RUN mkdir /run/php
+RUN useradd -ms /bin/bash myuser
+RUN mkdir /home/myuser/www
+ADD index.php /home/myuser/www/index.php
 #ADD nginx.conf /etc/nginx/nginx.conf
+CMD service ssh start && tail -F /var/log/mysql/error.log
 
-#ENTRYPOINT service ssh start && bash
-
+#WARNING - not working on bluemix with bx ic run, need to put -p or create container with web console.
 EXPOSE 80 443 110 137 138 143 145 22 23 25 53
 EXPOSE 139/udp 445/udp
