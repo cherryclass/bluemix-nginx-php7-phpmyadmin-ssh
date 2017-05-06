@@ -22,20 +22,18 @@ RUN aptitude install -y\
     ssh \
     nginx \
 php7.0-fpm
-	
 
-# forward request and error logs to docker log collector
-RUN ln -sf /dev/stdout /var/log/nginx/access.log \
-	&& ln -sf /dev/stderr /var/log/nginx/error.log
-
-
-
+# php7.0-fpm will not start if this directory does not exist
+RUN mkdir /run/php
 
 # configure NGINX as non-daemon
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 RUN useradd -ms /bin/bash myuser
-ADD index.php /home/myuser/www/
+RUN mkdir /home/myuser/www
+
+ADD index.php /home/myuser/www/index.php
+ADD nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80 443 110 137 138 143 145 22 23 25 53
 EXPOSE 139/udp 445/udp
