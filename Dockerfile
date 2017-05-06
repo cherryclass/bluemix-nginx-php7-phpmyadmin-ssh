@@ -27,11 +27,3 @@ RUN aptitude install -y\
 
 EXPOSE 80 443 110 137 138 143 145 22 23 25 53
 EXPOSE 139/udp 445/udp
-
-# forward request and error logs to docker log collector
-RUN ln -sf /dev/stdout /var/log/nginx/access.log \
-	&& ln -sf /dev/stderr /var/log/nginx/error.log
-	
-STOPSIGNAL SIGQUIT
-
-CMD ["nginx", "-g", "daemon off;"]
