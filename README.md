@@ -2,7 +2,9 @@
 
 Trying to have on <bold>bluemix<bold>: <br><br>
 
-
+->need to set nginx.conf
+->need to had some permissions for myuser/www
+->need to config phpmyadmin
 
 
 -nginx with a directory www that we can see with ssh: nginx could be set to home/myuser/www <br>
