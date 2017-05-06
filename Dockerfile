@@ -30,17 +30,17 @@ RUN aptitude install -y\
 	php7.0-fpm
 
 # php7.0-fpm will not start if this directory does not exist
-RUN mkdir /run/php
+#RUN mkdir /run/php
 
-RUN useradd -ms /bin/bash myuser
-RUN mkdir /home/myuser/www
-ADD index.php /home/myuser/www/index.php
+#RUN useradd -ms /bin/bash myuser
+#RUN mkdir /home/myuser/www
+#ADD index.php /home/myuser/www/index.php
 #ADD nginx.conf /etc/nginx/nginx.conf
+
+#ENTRYPOINT service ssh start && bash
 
 EXPOSE 80 443 110 137 138 143 145 22 23 25 53
 EXPOSE 139/udp 445/udp
-
-ENTRYPOINT service ssh start && bash
 
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
