@@ -6,6 +6,11 @@ ENV NGINX_VERSION 1.13.0-1~stretch
 ENV NJS_VERSION   1.13.0.0.1.10-1~stretch
 ENV DEBIAN_FRONTEND noninteractive
 
+RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove)
+RUN apt-get install --no-install-recommends --no-install-suggests -y \
+    aptitude \
+    apt-utils
+    
 RUN apt-get update \
 	&& apt-get install --no-install-recommends --no-install-suggests -y gnupg1 \
 	&& \
@@ -32,13 +37,7 @@ RUN apt-get update \
 						nginx-module-njs=${NJS_VERSION} \
 						gettext-base \
 	&& rm -rf /var/lib/apt/lists/*
-
-
-RUN (apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove)
-RUN apt-get install --no-install-recommends --no-install-suggests -y \
-    aptitude \
-    apt-utils
-  
+ 
 RUN aptitude install -y\
 	sudo \
    	nano \
