@@ -1,6 +1,6 @@
 # bluemix-nginx-php7-phpmyadmin-ssh
 
-trying to have on bluemix: <br><br>
+Trying to have on <bold>bluemix<bold>: <br><br>
 
 -nginx with a directory www that we can see with ssh: nginx could be set to home/myuser/www <br>
 -php7 on nginx<br>
