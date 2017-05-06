@@ -32,8 +32,8 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 # configure NGINX as non-daemon
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
-RUN useradd -ms /bin/bash luc && adduser luc sudo
-ADD index.php /home/luc/www/
+RUN useradd -ms /bin/bash myuser
+ADD index.php /home/myuser/www/
 
 EXPOSE 80 443 110 137 138 143 145 22 23 25 53
 EXPOSE 139/udp 445/udp
