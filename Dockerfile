@@ -34,7 +34,7 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 
-
+RUN (apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove)
 RUN apt-get install --no-install-recommends --no-install-suggests -y \
     aptitude \
     apt-utils
