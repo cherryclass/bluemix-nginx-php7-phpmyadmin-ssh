@@ -14,4 +14,12 @@ sudo passwd myuser<br>
 on Filezilla : your ip - myuser - your password - port 22<br><br>
 
 <h2> Bluemix</h2>
-You need to set port with -p on bx ic run or start the container via web console, EXPOSE not work in DOKERFILE.
+You need to:
+<br>
+set port with -p on bx ic run or start the container via web console, EXPOSE not work in DOKERFILE.<br>
+adduser myuser sudo<br>
+restart server<br>
+start ssh : cd etc  init.d/ssh start<br>
+
+
+
