@@ -5,7 +5,7 @@ nginx 1.13.0<br>
 php7.0-fpm<br>
 <br>
 <h2>Phpmyadmin</h2>
-Not working for the moment<br>
+Not configured for the moment<br>
 <br>
 <h2>ssh - Filezilla</h2>
 Access with bash command on your container and type:<br>
