@@ -19,6 +19,7 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
 #create user for ssh use and home for nginx server	
 RUN useradd -ms /bin/bash myuser
 RUN mkdir /home/myuser/www
+RUN sudo chown myuser /home/myuser/www
 
 ADD index.php /home/myuser/www/index.php
 #change user
