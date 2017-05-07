@@ -11,11 +11,9 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
     apt-utils
  RUN aptitude install -y\
 	sudo \
-   	nano \
-    ssh \ 
-    php7.0-fpm \
-	phpmyadmin
-
+   	ssh \ 
+    php7.0-fpm 
+	
 #create user for ssh use and home for nginx server	
 RUN useradd -ms /bin/bash myuser
 RUN mkdir /home/myuser/www
