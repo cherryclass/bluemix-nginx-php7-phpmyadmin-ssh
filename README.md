@@ -1,5 +1,3 @@
-# bluemix-nginx-php7-phpmyadmin-ssh
-
 <h1> nginx1.13 php7 with access ssh</h1>
 <br>
 <h2>Phpmyadmin</h2>
