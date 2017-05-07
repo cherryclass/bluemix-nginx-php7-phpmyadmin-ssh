@@ -1,4 +1,4 @@
-<h1> nginx1.13 php7-fpm with access ssh</h1>
+<h1> nginx php7-fpm with access ssh</h1>
 <br>
 <h2>Version</h2>
 nginx 1.13.0<br>
