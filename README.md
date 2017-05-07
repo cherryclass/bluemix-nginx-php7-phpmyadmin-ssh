@@ -1,4 +1,4 @@
-<h1> nginx1.13 php7 with access ssh</h1>
+<h1> nginx1.13 php7-fpm with access ssh</h1>
 <br>
 <h2>Phpmyadmin</h2>
 Not working for the moment<br>
