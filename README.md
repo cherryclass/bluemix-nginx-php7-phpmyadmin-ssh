@@ -12,5 +12,5 @@ sudo passwd myuser<br>
 <br>
 on Filezilla : your ip - myuser - your password - port 22<br><br>
 
-<h1> Bluemix</h1>
+<h2> Bluemix</h2>
 You need to set port with -p on bx ic run or start the container via web console, EXPOSE not work.
