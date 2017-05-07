@@ -19,9 +19,8 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
 #create user for ssh use and home for nginx server	
 RUN useradd -ms /bin/bash myuser
 RUN mkdir /home/myuser/www
-RUN sudo chown myuser /home/myuser/www
-
 ADD index.php /home/myuser/www/index.php
+RUN chown -R myuser /home/myuser/www
 #change user
 ADD nginx.conf /etc/nginx/nginx.conf
 #add SCRIPT_FILENAME
@@ -32,7 +31,6 @@ ADD fastcgi_params /etc/nginx/fastcgi_params
 #ADD usless/www.conf /etc/php/7.0/fpm/pool.d/www.conf
 #ADD usless/php-fpm.conf /etc/php/7.1/fpm/php-fpm.conf
 #RUN mkdir /run/php
-#RUN chown -R myuser /home/myuser/www
 
 #add config for nginx server
 ADD default.conf /etc/nginx/conf.d/default.conf
