@@ -38,5 +38,4 @@ CMD service ssh start && nginx -g "daemon off;"
 CMD service php7.0-fpm start && nginx -g "daemon off;"
 
 #WARNING - not working on bluemix with bx ic run, need to put -p or create container with web console.
-EXPOSE 80 443 110 137 138 143 145 22 23 25 53
-EXPOSE 139/udp 445/udp
+EXPOSE 80 443 110 143 145 22 25 53
