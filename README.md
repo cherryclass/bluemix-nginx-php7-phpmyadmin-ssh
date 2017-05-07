@@ -17,9 +17,5 @@ on Filezilla : your ip - myuser - your password - port 22<br><br>
 You need to:
 <br>
 set port with -p on bx ic run or start the container via web console, EXPOSE not work in DOKERFILE.<br>
-adduser myuser sudo<br>
-restart server<br>
+sudo passwd myuser<br>
 start ssh : cd etc  init.d/ssh start<br>
-
-
-
