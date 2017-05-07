@@ -1,19 +1,18 @@
 # bluemix-nginx-php7-phpmyadmin-ssh
 
-Trying to have on <bold>bluemix<bold>: <br><br>
-
-->need to set nginx.conf
-->need to had some permissions for myuser/www
-->need to config phpmyadmin
-
-
--nginx with a directory www that we can see with ssh: nginx could be set to home/myuser/www <br>
--php7 on nginx<br>
--phpmyadmin with some parameter to link at start with a mariadb on other container<br>
-
-
-After the start, to ssh like with filezilla working :<br>
+<h1> nginx1.13 php7 with access ssh</h1>
+<br>
+<h2>Phpmyadmin</h2>
+Not working for the moment<br>
+<br>
+<h2>ssh - Filezilla</h2>
+sudo passwd myuser<br>
+<br>
+or for bluemix:<br>
 bx ic exec -it my_container bash<br>
 sudo passwd myuser<br>
-cd etc<br>
-init.d/ssh start<br>
+<br>
+on Filezilla : your ip - myuser - your password - port 22<br><br>
+
+<h1> Bluemix</h1>
+You need to set port with -p on bx ic run or start the container via web console, EXPOSE not work.
