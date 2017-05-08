@@ -12,7 +12,8 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
  RUN aptitude install -y\
 	sudo \
    	ssh \ 
-    php7.0-fpm 
+    php7.0-fpm \
+    php-mysql
 	
 #create user for ssh use and home for nginx server	
 RUN useradd -ms /bin/bash myuser
