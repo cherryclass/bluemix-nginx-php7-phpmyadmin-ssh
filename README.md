@@ -8,7 +8,7 @@ php7.0-fpm
 tag : master, 1.1.1
 
 #### 1.1.1 :
-fix ipv6
+fix ipv6   
 fix some wordpress security
 #### 1.1 :
 mysql and mariadb connection ok    
