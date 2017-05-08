@@ -13,6 +13,7 @@ docker run -m 256 --name nginx cherryclass/nginx-php7-fpm-ssh
 ```
 [![N|Solid](http://cherryclass.net/img/bluemix.jpg )](https://console.ng.bluemix.net) 
 ``` sh
+#####Bluemix
 docker pull cherryclass/nginx-php7-fpm-ssh-bluemix
 bx login -a https://api.ng.bluemix.net
 bx ic init
