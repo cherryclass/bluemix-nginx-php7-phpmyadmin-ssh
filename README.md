@@ -1,4 +1,4 @@
-# Nginx Php7-fpm access ssh  
+# Nginx Php7-fpm with ssh and mysql access
 [![N|Solid](http://cherryclass.net/img/nginx.jpg )](https://nginx.org/)[![N|Solid](http://cherryclass.net/img/php7.jpg )](http://php.net)
    
 ## Version
