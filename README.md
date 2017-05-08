@@ -4,7 +4,8 @@
 ## Version
 nginx 1.13.0  
 php7.0-fpm  
-tag : master, 1.0
+tag : master, 1.1   
+1.0 (without mysql)
 ## Quick start
 
 ```
