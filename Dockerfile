@@ -12,8 +12,8 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
  RUN aptitude install -y\
 	sudo \
    	ssh \ 
-    php7.0-fpm \
-    php-mysql
+    	php7.0-fpm \
+    	php-mysql
 	
 #create user for ssh use and home for nginx server	
 RUN useradd -ms /bin/bash myuser
@@ -26,15 +26,14 @@ ADD nginx.conf /etc/nginx/nginx.conf
 ADD fastcgi_params /etc/nginx/fastcgi_params
 ADD php.ini /etc/php/7.0/fpm/php.ini
 
-#all horrible test to solve some problem
 #ADD usless/www.conf /etc/php/7.0/fpm/pool.d/www.conf
 #ADD usless/php-fpm.conf /etc/php/7.1/fpm/php-fpm.conf
-#RUN mkdir /run/php
 
 #add config for nginx server
 ADD default.conf /etc/nginx/conf.d/default.conf
 
 #start services
+#ARNING - ssh not start on bluemix with DOKERFILE? need to start manualy
 CMD service ssh start && nginx -g "daemon off;"
 CMD service php7.0-fpm start && nginx -g "daemon off;"
 
