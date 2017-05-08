@@ -1,7 +1,7 @@
 <h1> nginx php7-fpm with access ssh</h1>
 <br>
 <h2>Version</h2>
-nginx 1.13.0<br>
+nginx 1.13.0  
 php7.0-fpm<br>
 <br>
 <h2>Phpmyadmin</h2>
