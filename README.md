@@ -5,8 +5,11 @@
 nginx 1.13.0  
 php7.0-fpm  
 
-tag : master, 1.1
+tag : master, 1.1.1
 
+#### 1.1.1 :
+fix ipv6
+fix some wordpress security
 #### 1.1 :
 mysql and mariadb connection ok    
 fixed pretty permalinks on wordpress
