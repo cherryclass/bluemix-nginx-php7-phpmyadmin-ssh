@@ -7,7 +7,7 @@ php7.0-fpm
 
 tag : master, 1.1
 
-####1.1 :
+#### 1.1 :
 mysql and mariadb connection ok 
 fixed pretty permalinks on wordpress
 
