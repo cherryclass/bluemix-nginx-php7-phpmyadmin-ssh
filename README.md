@@ -1,5 +1,5 @@
 # Nginx Php7-fpm access ssh  
-[![N|Solid](http://cherryclass.net/img/php7.jpg )](http://php.net)[![N|Solid](http://cherryclass.net/img/nginx.jpg )](https://nginx.org/)
+[![N|Solid](http://cherryclass.net/img/nginx.jpg )](https://nginx.org/)[![N|Solid](http://cherryclass.net/img/php7.jpg )](http://php.net)
    
 ## Version
 nginx 1.13.0  
@@ -9,7 +9,7 @@ tag : master, 1.0
 
 ```
 docker pull cherryclass/nginx-php7-fpm-ssh
-docker run -p 443 -p 80 -p 22 -m 90 --name nginx cherryclass/nginx-php7-fpm-ssh
+docker run -m 256 --name nginx cherryclass/nginx-php7-fpm-ssh
 ```
 [![N|Solid](http://cherryclass.net/img/bluemix.jpg )](https://console.ng.bluemix.net) 
 ``` sh
@@ -20,10 +20,10 @@ bx ic namespace-get
 
 #### replace *namespace* by your's
 docker tag cherryclass/nginx-php7-fpm-ssh-bluemix:master registry.ng.bluemix.net/*namespace*/nginx-php7-fpm-ssh:master 
-docker push    
+docker push registry.ng.bluemix.net/*namespace*/nginx-php7-fpm-ssh:master
    
 #### set port in command line or start the container via web console, EXPOSE not work in DOKERFILE.
-bx ic run -p 443 -p 80 p 22 --volume somevilumedata:/data/nginx -m 90 --name nginx registry.ng.bluemix.net/mynamespace/nginx-php7-ssh
+bx ic run -p 443 -p 80 p 22 --volume somevilumedata:/data/nginx -m 256 --name nginx registry.ng.bluemix.net/mynamespace/nginx-php7-ssh
 ```
 
 
