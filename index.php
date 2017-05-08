@@ -6,6 +6,6 @@
 </head>
 <body>
 	html ok<br>
-	<?php echo "php ok"; ?>
+	<?php echo "php ok"; phpinfo(); ?>
 </body>
 </html>
