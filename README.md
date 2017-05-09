@@ -7,7 +7,7 @@
 nginx 1.13.0  
 php7.0-fpm  
 
-Last : [1.1.1](https://github.com/cherryclass/nginx-php7-fpm-ssh/blob/master/release.md)  
+Last : [1.1.2](https://github.com/cherryclass/nginx-php7-fpm-ssh/blob/master/release.md)  
 
   
 
@@ -44,9 +44,9 @@ Access with bash command on your container
 ### Bluemix
 bx ic exec -it my_container bash
 ```
-and set password for *mysuser*, start ssh.
+and set password for *www-data*, start ssh.
 ```  sh
-$ sudo passwd myuser  
+$ sudo passwd www-data  
 $ etc/init.d/ssh start
 ```
 
