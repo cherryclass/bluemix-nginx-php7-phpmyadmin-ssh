@@ -31,8 +31,6 @@ ADD php.ini /etc/php/7.0/fpm/php.ini
 ADD default.conf /etc/nginx/conf.d/default.conf
 
 #start services
-#WARNING - ssh not start on bluemix with DOKERFILE? need to start manualy
-CMD service ssh start && nginx -g "daemon off;"
 CMD service php7.0-fpm start && nginx -g "daemon off;"
 
 #WARNING - not working on bluemix with bx ic run, need to put -p or create container with web console.
