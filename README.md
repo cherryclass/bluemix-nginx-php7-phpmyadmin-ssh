@@ -13,7 +13,8 @@ Last : [1.1.1](release.md)
 
 
 ## Quick start
-
+Change *default.conf* for your website    
+Add more memory for wordpress, - m 512   
 ```
 docker pull cherryclass/nginx-php7-fpm-ssh
 docker run -m 256 --name nginx cherryclass/nginx-php7-fpm-ssh
@@ -33,7 +34,7 @@ docker push registry.ng.bluemix.net/*namespace*/nginx-php7-fpm-ssh:master
 #### set port in command line or start the container via web console, EXPOSE not work in DOKERFILE.
 bx ic run -p 443 -p 80 p 22 --volume somevilumedata:/data/nginx -m 256 --name nginx registry.ng.bluemix.net/mynamespace/nginx-php7-ssh
 ```    
-Change default.conf for your website
+
 
 
 ## ssh - Filezilla
