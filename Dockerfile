@@ -30,6 +30,7 @@ ADD php.ini /etc/php/7.0/fpm/php.ini
 #add config for nginx server
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD default.conf /etc/nginx/conf.d/default.conf
+ADD wordpress.conf /etc/nginx/wordpress.conf
 
 #start services
 CMD service php7.0-fpm start && nginx -g "daemon off;"
