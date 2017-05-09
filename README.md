@@ -57,7 +57,7 @@ yourip - myuser - yourpassword - 22
 Desinstall it on Dokerfile and default.conf if you want more security
 
 ## Phpmyadmin
-Working on, for the moment, install Phpmyadmin official image in other container with *dbhost* the ip.
+Working on, for the moment, install [Phpmyadmin official image](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) in other container with *dbhost* the ip.
 ```
 docker pull phpmyadmin/phpmyadmin
 docker run --name myadmin -d -e PMA_HOST=dbhost -p 8080:80 phpmyadmin/phpmyadmin
