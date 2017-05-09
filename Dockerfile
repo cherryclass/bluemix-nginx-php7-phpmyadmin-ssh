@@ -20,14 +20,15 @@ RUN useradd -ms /bin/bash myuser
 RUN mkdir /home/myuser/www
 ADD index.php /home/myuser/www/index.php
 RUN chown -R myuser /home/myuser/www
-#add conf
-ADD nginx.conf /etc/nginx/nginx.conf
-#ADD fastcgi_params /etc/nginx/fastcgi_params
+
+#add conf php
 ADD php.ini /etc/php/7.0/fpm/php.ini
+#ADD fastcgi_params /etc/nginx/fastcgi_params
 #ADD www.conf /etc/php/7.0/fpm/pool.d/www.conf
 #ADD php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf
 
 #add config for nginx server
+ADD nginx.conf /etc/nginx/nginx.conf
 ADD default.conf /etc/nginx/conf.d/default.conf
 
 #start services
