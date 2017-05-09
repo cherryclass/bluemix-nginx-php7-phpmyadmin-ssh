@@ -1,3 +1,7 @@
+## 1.1.2 :
+#### 10-05-17   
+fix permission for Wordpress
+
 ## 1.1.1 :
 #### 09-05-17   
 fix ipv6   
