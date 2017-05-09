@@ -11,7 +11,7 @@ tag : master, 1.1.1
 fix ipv6   
 fix some wordpress security   
 add example to multi site     
-drop ssh start in dockerfile ->crash php-fpm, not work automaticaly on bluemix anyway
+drop ssh start in dockerfile (crash php)   
 drop unused files
 #### 1.1 :
 mysql and mariadb connection ok    
