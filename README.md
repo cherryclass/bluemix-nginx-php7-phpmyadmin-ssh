@@ -9,7 +9,9 @@ tag : master, 1.1.1
 
 #### 1.1.1 :
 fix ipv6   
-fix some wordpress security
+fix some wordpress security 
+add example to multi site
+drop ssh start in dockerfile ->crash php-fpm, not work automaticaly on bluemix anyway
 #### 1.1 :
 mysql and mariadb connection ok    
 fixed pretty permalinks on wordpress
