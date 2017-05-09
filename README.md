@@ -52,7 +52,7 @@ $ etc/init.d/ssh start
 
 Start filezilla, putty etc with 
 ```  sh
-yourip - myuser - yourpassword - 22
+yourip - www-data - yourpassword - 22
 ```    
 Desinstall it on Dokerfile and default.conf if you want more security
 
