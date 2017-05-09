@@ -17,11 +17,12 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
 RUN aptitude install -y\
 	sudo \
    	ssh 
-#create user for ssh use and home for nginx server	
-RUN useradd -ms /bin/bash myuser
-RUN mkdir /home/myuser/www
-ADD index.php /home/myuser/www/index.php
-RUN chown -R myuser /home/myuser/www
+	
+RUN mkdir /home/site
+RUN mkdir /home/site/www
+ADD index.php /home/site/www/index.php
+RUN chown -R www-data:www-data /home/site/www
+RUN chsh -s /bin/bash www-data
 
 #CONFIG ----------------------
 #PHP
