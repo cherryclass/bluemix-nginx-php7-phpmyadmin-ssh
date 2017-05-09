@@ -29,7 +29,7 @@ ADD php.ini /etc/php/7.0/fpm/php.ini
 
 #add config for nginx server
 ADD nginx.conf /etc/nginx/nginx.conf
-ADD php.conf /etc/nginx/conf.d/php.conf
+ADD fastcgi.conf /etc/nginx/fastcgi.conf
 ADD default.conf /etc/nginx/conf.d/default.conf
 
 #start services
