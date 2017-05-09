@@ -22,7 +22,7 @@ ADD index.php /home/myuser/www/index.php
 RUN chown -R myuser /home/myuser/www
 #add conf
 ADD nginx.conf /etc/nginx/nginx.conf
-ADD fastcgi_params /etc/nginx/fastcgi_params
+#ADD fastcgi_params /etc/nginx/fastcgi_params
 ADD php.ini /etc/php/7.0/fpm/php.ini
 #ADD www.conf /etc/php/7.0/fpm/pool.d/www.conf
 #ADD php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf
