@@ -1,5 +1,5 @@
 # Nginx Php7-fpm    
-## work with Wordpress, ssh , mariadb , Bluemix        
+## work with Wordpress, ssh , Mariadb , Bluemix        
 
 [![N|Solid](http://cherryclass.net/img/nginx.jpg )](https://nginx.org/)[![N|Solid](http://cherryclass.net/img/php7.jpg )](http://php.net)
    
@@ -13,8 +13,7 @@ Last : [1.1.1](release.md)
 
 
 ## Quick start
-Change *default.conf* for your website    
-Add more memory for Wordpress, - m 512   
+      
 ```
 docker pull cherryclass/nginx-php7-fpm-ssh
 docker run -m 256 --name nginx cherryclass/nginx-php7-fpm-ssh
@@ -34,8 +33,10 @@ docker push registry.ng.bluemix.net/*namespace*/nginx-php7-fpm-ssh:master
 #### set port in command line or start the container via web console, EXPOSE not work in DOKERFILE.
 bx ic run -p 443 -p 80 p 22 --volume somevilumedata:/data/nginx -m 256 --name nginx registry.ng.bluemix.net/mynamespace/nginx-php7-ssh
 ```    
+Add more memory for Wordpress, - m 512 
 
-
+## Multisite   
+Change *default.conf* for your website
 
 ## ssh - Filezilla
 Access with bash command on your container
@@ -53,7 +54,7 @@ Start filezilla, putty etc with
 ```  sh
 yourip - myuser - yourpassword - 22
 ```    
-Desinstall it on Dockerfile if you want more security
+Desinstall it on Dokerfile and default.conf if you want more security
 
 ## Phpmyadmin
 Working on, for the moment, install Phpmyadmin official image in other container with *dbhost* the ip.
