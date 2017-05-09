@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>nginx1.13 - php7-fpm - ssh !</title>
+	<title>nginx1.13 - php7.0-fpm </title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
