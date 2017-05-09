@@ -1,7 +1,8 @@
 ## 1.1.1 :
 #### 09-05-17   
 fix ipv6   
-fix some Wordpress security   
+fix some Wordpress security  
+fix Wordpress pretty links    
 add example to multi site   
 add release   
 drop ssh start in dockerfile (crash php)   
