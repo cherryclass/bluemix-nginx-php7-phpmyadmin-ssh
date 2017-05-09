@@ -24,16 +24,16 @@ RUN chown -R myuser /home/myuser/www
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD fastcgi_params /etc/nginx/fastcgi_params
 ADD php.ini /etc/php/7.0/fpm/php.ini
-ADD www.conf /etc/php/7.0/fpm/pool.d/www.conf
+#ADD www.conf /etc/php/7.0/fpm/pool.d/www.conf
 #ADD php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf
 
 #add config for nginx server
 ADD default.conf /etc/nginx/conf.d/default.conf
 
 #start services
-CMD service php7.0-fpm start && nginx -g "daemon off;"
 #WARNING - ssh not start on bluemix with DOKERFILE? need to start manualy
 CMD service ssh start && nginx -g "daemon off;"
+CMD service php7.0-fpm start && nginx -g "daemon off;"
 
 #WARNING - not working on bluemix with bx ic run, need to put -p or create container with web console.
 EXPOSE 80 443 110 143 145 22 25 53
