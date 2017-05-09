@@ -1,5 +1,5 @@
 # Nginx Php7-fpm    
-## work with Wordpress, ssh and mysql, better on mariadb :)
+## work with Wordpress, ssh and mariadb
 [![N|Solid](http://cherryclass.net/img/nginx.jpg )](https://nginx.org/)[![N|Solid](http://cherryclass.net/img/php7.jpg )](http://php.net)
    
 ## Version
