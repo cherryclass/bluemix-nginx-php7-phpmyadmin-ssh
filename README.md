@@ -1,4 +1,5 @@
-# Nginx Php7-fpm with ssh and mysql access
+# Nginx Php7-fpm with ssh and mysql access    
+## work with Wordpress
 [![N|Solid](http://cherryclass.net/img/nginx.jpg )](https://nginx.org/)[![N|Solid](http://cherryclass.net/img/php7.jpg )](http://php.net)
    
 ## Version
