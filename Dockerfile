@@ -23,7 +23,7 @@ RUN chown -R myuser /home/myuser/www
 #change user
 ADD nginx.conf /etc/nginx/nginx.conf
 #add SCRIPT_FILENAME
-ADD fastcgi_params /etc/nginx/fastcgi_params
+#ADD fastcgi_params /etc/nginx/fastcgi_params
 ADD php.ini /etc/php/7.0/fpm/php.ini
 
 #all horrible test to solve some problem
