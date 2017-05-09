@@ -14,7 +14,7 @@ Last : [1.1.1](release.md)
 
 ## Quick start
 Change *default.conf* for your website    
-Add more memory for wordpress, - m 512   
+Add more memory for Wordpress, - m 512   
 ```
 docker pull cherryclass/nginx-php7-fpm-ssh
 docker run -m 256 --name nginx cherryclass/nginx-php7-fpm-ssh
