@@ -1,7 +1,7 @@
 # Nginx Php7-fpm    
 ## work with Wordpress, ssh , Mariadb , Bluemix        
 
-[!](http://cherryclass.net/img/nginx.jpg )](https://nginx.org/)[![N|Solid](http://cherryclass.net/img/php7.jpg )](http://php.net)
+[![N|Solid](http://cherryclass.net/img/nginx.jpg )](https://nginx.org/)[![N|Solid](http://cherryclass.net/img/php7.jpg )](http://php.net)
    
 ## Version
 nginx 1.13.0  
