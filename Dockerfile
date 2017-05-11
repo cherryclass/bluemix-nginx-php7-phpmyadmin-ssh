@@ -12,7 +12,8 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
  RUN aptitude install -y\
 	php7.0-fpm \
     	php-mysql \
-	php-xml
+	php-xml \
+	php7.0-mbstring
 
 #SSH ------------------------------
 RUN aptitude install -y\
