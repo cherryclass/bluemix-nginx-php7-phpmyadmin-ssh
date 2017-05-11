@@ -1,3 +1,7 @@
+## 1.1.3 :
+#### 11-05-17   
+mbstring and php-xml
+
 ## 1.1.2 :
 #### 10-05-17   
 fix permission for Wordpress
