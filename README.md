@@ -7,7 +7,7 @@
 nginx 1.13.0  
 php7.0-fpm  
 
-Last : [1.1.2](https://github.com/cherryclass/nginx-php7-fpm-ssh/blob/master/release.md)  
+Last : [1.1.3](https://github.com/cherryclass/nginx-php7-fpm-ssh/blob/master/release.md)  
 
   
 
