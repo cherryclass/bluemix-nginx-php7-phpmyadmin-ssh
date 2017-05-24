@@ -1,3 +1,7 @@
+## 1.1.4 :
+#### 24-05-17   
+drop aptitude
+
 ## 1.1.3 :
 #### 11-05-17   
 mbstring and php-xml
