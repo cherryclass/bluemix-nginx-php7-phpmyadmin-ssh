@@ -9,15 +9,11 @@ RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && ap
 RUN apt-get install --no-install-recommends --no-install-suggests -y \
 	aptitude \
     	apt-utils
- RUN aptitude install -y\
 	php7.0-fpm \
     	php-mysql \
 	php-xml \
 	php7.0-mbstring \
-	php-gd
-
-#SSH ------------------------------
-RUN aptitude install -y\
+	php-gd \
 	sudo \
    	ssh 
 	
