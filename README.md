@@ -31,7 +31,7 @@ docker tag cherryclass/nginx-php7-fpm-ssh-bluemix:master registry.ng.bluemix.net
 docker push registry.ng.bluemix.net/*namespace*/nginx-php7-fpm-ssh:master
    
 #### set port in command line or start the container via web console, EXPOSE not work in DOKERFILE.
-bx ic run -p 443 -p 80 p 22 --volume somevilumedata:/data/nginx -m 256 --name nginx registry.ng.bluemix.net/mynamespace/nginx-php7-ssh
+bx ic run -P --volume somevilumedata:/data/nginx -m 256 --name nginx registry.ng.bluemix.net/mynamespace/nginx-php7-ssh
 ```    
 Add more memory for Wordpress, - m 512 
 
