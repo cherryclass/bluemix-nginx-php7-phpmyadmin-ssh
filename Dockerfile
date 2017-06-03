@@ -38,5 +38,5 @@ ADD phpfpm.conf /etc/nginx/phpfpm.conf
 #start services
 CMD service php7.0-fpm start && nginx -g "daemon off;"
 
-#WARNING - not working on bluemix with bx ic run, need to put -p or create container with web console.
+#on bluemix, you need to put -P or create container with web console.
 EXPOSE 80 443 110 143 145 22 25 53
