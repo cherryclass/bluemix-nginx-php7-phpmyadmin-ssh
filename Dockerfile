@@ -39,4 +39,4 @@ ADD phpfpm.conf /etc/nginx/phpfpm.conf
 CMD service php7.0-fpm start && nginx -g "daemon off;"
 
 #on bluemix, you need to put -P or create container with web console.
-EXPOSE 80 443 110 143 145 22 25 53
+EXPOSE 80 443 22 25
