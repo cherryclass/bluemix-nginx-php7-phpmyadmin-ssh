@@ -13,7 +13,9 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
 	php-xml \
 	php7.0-mbstring \
 	php-gd \
+	cerbot \
 	sudo \
+	nano \
    	ssh 
 	
 RUN mkdir /home/site
@@ -33,11 +35,10 @@ ADD php.ini /etc/php/7.0/fpm/php.ini
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD default.conf /etc/nginx/conf.d/default.conf
 ADD proxy.conf /etc/nginx/conf.d/proxy.conf
-ADD wordpress.conf /etc/nginx/wordpress.conf
 ADD phpfpm.conf /etc/nginx/phpfpm.conf
 
 #start services
 CMD service php7.0-fpm start && nginx -g "daemon off;"
 
 #on bluemix, you need to put -P or create container with web console.
-EXPOSE 80 443 110 143 145 22 25 53
+EXPOSE 80 443 22 25
