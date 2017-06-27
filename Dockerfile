@@ -13,7 +13,7 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
 	php-xml \
 	php7.0-mbstring \
 	php-gd \
-	cerbot \
+	certbot \
 	sudo \
 	nano \
    	ssh 
