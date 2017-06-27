@@ -32,7 +32,6 @@ ADD php.ini /etc/php/7.0/fpm/php.ini
 #NGINX
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD default.conf /etc/nginx/conf.d/default.conf
-ADD proxy.conf /etc/nginx/conf.d/proxy.conf
 ADD wordpress.conf /etc/nginx/wordpress.conf
 ADD phpfpm.conf /etc/nginx/phpfpm.conf
 
