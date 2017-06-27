@@ -42,3 +42,9 @@ CMD service php7.0-fpm start && nginx -g "daemon off;"
 
 #on bluemix, you need to put -P or create container with web console.
 EXPOSE 80 443 22 25
+
+#ssl
+#sudo letsencrypt certonly --email <your-email-address> -d <your-domain-name>
+#2
+#acces live chown?
+#sudo nano /etc/nginx/conf.d/default.conf
