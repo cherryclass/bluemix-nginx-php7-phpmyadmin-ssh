@@ -14,6 +14,7 @@ RUN apt-get install --no-install-recommends --no-install-suggests -y \
 	php7.0-mbstring \
 	php-gd \
 	sudo \
+	nano \
    	ssh 
 	
 RUN mkdir /home/site
