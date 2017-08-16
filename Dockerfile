@@ -43,7 +43,7 @@ CMD service php7.0-fpm start && nginx -g "daemon off;"
 #on bluemix, you need to put -P or create container with web console.
 EXPOSE 80 443 22 25
 
-letsencrypt certonly --email contact@cherryclass.net -d gitlab.cherryclass.net -d kanboard.cherryclass.net -d adminer.cherryclass.net -d nextcloud.cherryclass.net -d phpmyadmin.cherryclass.net --standalone
+RUN letsencrypt certonly --email contact@cherryclass.net -d gitlab.cherryclass.net -d kanboard.cherryclass.net -d adminer.cherryclass.net -d nextcloud.cherryclass.net -d phpmyadmin.cherryclass.net --standalone
 #2
 #acces live chown?
 #sudo nano /etc/nginx/conf.d/default.conf
